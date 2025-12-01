@@ -1,4 +1,7 @@
-import React from 'react'
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faAirbnb } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom'
 
 const Header = () => {
@@ -95,7 +98,8 @@ const Header = () => {
             <div className="header_topbar--left">
               <div className="header_topbar--pill">
                 <span className="header_topbar--label">
-                  <FontAwesomeIcon icon={byPrefixAndName.fas['phone-flip']} />
+                  <FontAwesomeIcon icon={faCoffee} size="2x" />
+                  <FontAwesomeIcon icon={faAirbnb} size="2x"/>
                 </span>
                 <span className="header_topbar--value">407-984-5529</span>
               </div>
